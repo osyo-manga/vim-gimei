@@ -7,7 +7,7 @@ function! gimei#vital()
 	return vital#gimei#new()
 endfunction
 
-let s:R = s:V.import("Random")
+let s:R = gimei#vital().import("Random")
 
 function! s:dump(name)
 	return {
